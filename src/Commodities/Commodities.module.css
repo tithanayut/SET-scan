@@ -1,0 +1,12 @@
+.Commodities {
+	display: flex;
+	width: 85%;
+	margin: auto;
+}
+
+@media (max-width: 768px) {
+	.Commodities {
+		display: block;
+		width: 100%;
+	}
+}

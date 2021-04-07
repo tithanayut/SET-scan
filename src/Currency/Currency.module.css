@@ -1,0 +1,11 @@
+.Currency {
+	width: 650px;
+	height: 450px;
+	margin: auto;
+}
+
+@media (max-width: 768px) {
+	.Currency {
+		width: 100%;
+	}
+}

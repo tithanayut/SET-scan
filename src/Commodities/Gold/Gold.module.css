@@ -1,0 +1,11 @@
+.Gold {
+	width: 610px;
+	height: 450px;
+	margin: auto;
+}
+
+@media (max-width: 768px) {
+	.Gold {
+		width: 90%;
+	}
+}
