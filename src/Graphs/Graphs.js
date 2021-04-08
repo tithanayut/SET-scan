@@ -1,26 +1,20 @@
 import React from "react";
 import Graph from "./Graph/Graph";
 
-const Graphs = () => {
+const Graphs = (props) => {
 	return (
 		<div className="page">
-			<p>Demo</p>
 			<div className="row" id="graphs">
-				<Graph
-					symbol="KBANK"
-					index={1}
-					interval={{ value: 3, unit: "month" }}
-				/>
-				<Graph
-					symbol="SCC"
-					index={1}
-					interval={{ value: 3, unit: "month" }}
-				/>
-				<Graph
-					symbol="PTT"
-					index={1}
-					interval={{ value: 3, unit: "month" }}
-				/>
+				{props.watchlist.map((symbol, index) => {
+					return (
+						<Graph
+							key={symbol}
+							symbol={symbol}
+							index={index}
+							interval={{ value: 3, unit: "month" }}
+						/>
+					);
+				})}
 			</div>
 		</div>
 	);
