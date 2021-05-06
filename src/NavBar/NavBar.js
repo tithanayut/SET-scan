@@ -5,7 +5,7 @@ const NavBar = (props) => {
 	return (
 		<nav className="navbar navbar-expand-lg navbar-dark bg-primary">
 			<NavLink to="/" className="navbar-brand">
-				SET Scan
+				SET Scanner
 			</NavLink>
 			<button
 				className="navbar-toggler"
